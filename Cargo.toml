@@ -1,0 +1,18 @@
+[package]
+name = "mangle-insta-http"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pyo3 = { version = "*", features = ["auto-initialize"] }
+axum = { version = "*", features = ["macros", "ws"] }
+tokio = { version = "*", features = ["rt-multi-thread", "macros"] }
+clap = { version = "*", features = ["derive"] }
+tower = { version = "*" }
+tower-http = { version = "*", features = ["cors", "compression-gzip", "compression-br", "trace", "auth"] }
+constant_time_eq = "*"
+regex = "*"
+serde = { version = "*", features = ["derive"]}
+toml = "*"
