@@ -17,3 +17,6 @@ regex = "*"
 serde = { version = "*", features = ["derive"]}
 toml = "*"
 notify = "*"
+
+[profile.release]
+lto = true
